@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillMatch: Job Portal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 pt-16 md:pt-20">
+    <!-- Navigation Bar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 h-16 md:h-20 bg-[#339860] flex items-center px-4 md:px-10"
+    >
+     <!-- Logo Section -->
+      <div class="flex w-1/3 justify-center order-1">
+        <a href="#">
+          <img
+            src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1740387794/Logo-text-transparent_ua1hds.png"
+            alt="SkillMatch Logo"
+            class="h-12 sm:h-16 md:h-20 object-contain"
+          />
+        </a>
+      </div>
+<!-- Post a Resume Button -->
+      <div class="flex w-1/3 justify-center order-2 md:order-3">
+        <button
+          class="py-2 px-4 md:py-3 md:px-6 text-white text-sm md:text-lg rounded-full border shadow-lg font-semibold hover:bg-white hover:text-black transition duration-300"
+        >
+          Post a Resume
+        </button>
+      </div>
+ <!-- Hamburger Menu for Mobile -->
+      <div class="flex w-1/3 justify-center sm:hidden order-3">
+        <button class="text-white text-3xl">&#9776;</button>
+      </div>
+ <!-- Navigation Links -->
+      <div
+        class="hidden sm:flex w-full md:w-1/2 justify-center gap-x-6 order-3 md:order-2"
+      >
+        <a href="#" class="text-white text-lg hover:underline decoration-2 underline-offset-4">Find a Job</a>
+        <a href="#" class="text-white text-lg hover:underline decoration-2 underline-offset-4">Who We Are</a>
+        <a href="#" class="text-white text-lg hover:underline decoration-2 underline-offset-4">Hire Talent</a>
+        <a href="#" class="text-white text-lg hover:underline decoration-2 underline-offset-4">Blog</a>
+        <a href="#" class="text-white text-lg hover:underline decoration-2 underline-offset-4">Talk With Us</a>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="h-screen pt-10 bg-[#339860] flex justify-center items-center">
+      <div class="flex flex-col justify-center items-center w-[80%] mx-auto text-center">
+        <p class="text-white text-lg font-semibold">WORK BETTER. LIVE BETTER.</p>
+        <h1 class="text-4xl md:text-7xl font-bold text-white mt-4">Find a job at the world’s most interesting companies</h1>
+        <button
+          class="px-6 md:px-12 py-2 md:py-3 text-white text-sm md:text-2xl rounded-full border shadow-lg bg-blue-800 mt-16 font-semibold hover:bg-white hover:text-black transition duration-300"
+        >
+          Find Jobs
+        </button>
+      </div>
+    </div>
+   <!-- Image and Content Section -->
+    <div class="relative h-[80vh]">
+       <!-- Hero Section Images -->
+      <img src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1741264968/Hero-L_jjjpdp.webp" class="absolute right-24 top-[-40%] hidden md:block" alt="Hero Left Image"/>
+      <img src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1741264967/Hero-C_ikd0bs.webp" class="absolute right-[50%] top-[-20%] hidden md:block" alt="Hero Center Image"/>
+      <img src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1741264967/Hero-R_aislnq.webp" class="absolute left-[22%] top-[10%] hidden md:block" alt="Hero Right Image"/>
+      <img src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1741266957/Hr_r7z27r.webp" class="absolute bottom-[10%] right-[88%] hidden md:block" alt="Hero Bottom Left Image"/>
+      <img src="https://res.cloudinary.com/dsk0mhwfq/image/upload/v1741266958/hb_cnxasv.webp" class="absolute bottom-[10%] left-[88%] hidden md:block" alt="Hero Bottom Right Image"/>
+      <div class="flex justify-center h-full">
+        <div class="flex flex-col items-center text-center w-full md:w-[60%] pt-[15vh] space-y-4">
+          <p class="text-lg font-medium">WORK BETTER. LIVE BETTER.</p>
+          <h1 class="text-4xl font-semibold leading-tight">Reach new heights with your recruiting</h1>
+          <h3 class="text-2xl text-gray-500">
+            HR industry experts advise: the first step in a successful search for an excellent position should be to analyze the labor market and identify your own competencies, which will become advantages — a unique trade offer of a specialist.
+          </h3>
+          <br>
+          <button class="py-4 px-8 bg-gray-800 text-white rounded-full text-2xl font-semibold hover:bg-green-800">RECRUIT WITH US</button>
+        </div>
+      </div>
+    </div>
+ <!-- Job Find Section -->
+    <div class="h-80 bg-yellow-300 ">
+      <div class="w-4/5 mx-auto">
+        <h2 class="text-2xl font-semibold text-gray-800 text-center py-4">FIND A JOB</h2>
+      </div>
+      <div class="relative w-full max-w-md mx-auto mt-10">
+        <input 
+          type="text"
+          placeholder="Search for jobs, companies..."
+          class="w-full pl-10 pr-4 py-2 border rounded-full outline-none shadow-md focus:ring-2 focus:ring-green-500"
+        />
+        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-full"></i>
+      </div>
+      
+    </div>
+
+    <footer class="bg-gray-900 text-white pt-6">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left">
+          <h2 class="text-xl font-semibold">SkillMatch</h2>
+          <p class="text-gray-400 text-sm mt-1">Your gateway to the best jobs.</p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <h3 class="text-lg font-medium">Contact</h3>
+          <p class="text-gray-400 text-sm">Email: support@skillmatch.com</p>
+          <p class="text-gray-400 text-sm">Phone: +123 456 7890</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="flex justify-center py-4">
+        <p class="text-sm">© 2025 SkillMatch. All rights reserved. | Made with ❤️ by <span class="text-white font-medium">Anmol</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
